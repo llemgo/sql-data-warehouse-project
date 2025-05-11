@@ -11,6 +11,14 @@ This project showcases a structured pipeline where raw data from enterprise sour
 
 ---
 
+##  🏗️ Data Architecture
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
+![image](https://github.com/user-attachments/assets/2e4184d6-a1d1-4e3b-aaa4-ce25bb1095d0)
+1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
+---
+
 ## 📌 Project Requirements: Objective and Specification
 
 ### 🎯 Objective
